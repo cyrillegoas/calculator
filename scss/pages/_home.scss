@@ -1,0 +1,11 @@
+@use "../abstracts/colors";
+
+body {
+  background-color: colors.$pastel-grey;
+  background-image: linear-gradient(
+    45deg,
+    colors.$pastel-grey 0%,
+    colors.$pastel-red 60%,
+    colors.$pastel-orange 100%
+  );
+}
