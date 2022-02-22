@@ -1,3 +1,10 @@
-$pastel-grey: #716f81;
-$pastel-red: #b97a95;
-$pastel-orange: #f6ae99;
+@use "sass:color";
+
+$pastel-grey: hsl(247, 7%, 47%);
+$pastel-grey-darker: hsl(247, 7%, 47%);
+$pastel-red: hsl(334, 31%, 60%);
+$pastel-orange: hsl(14, 84%, 78%);
+$pastel-orange-hover: hsl(14, 84%, 82%);
+$pastel-beige: hsl(39, 65%, 85%);
+$pastel-beige-hover: hsl(39, 65%, 89%);
+$white: hsl(0, 0%, 97%);
