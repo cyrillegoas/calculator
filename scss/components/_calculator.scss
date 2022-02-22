@@ -1,0 +1,54 @@
+@use "../abstracts/colors";
+@use "../abstracts/fonts";
+
+.calc {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: colors.$pastel-grey;
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  grid-template-rows: repeat(6, 70px);
+  gap: 2px;
+  font-size: 2rem;
+  font-family: fonts.$mono;
+
+  &__display {
+    grid-column: span 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: colors.$white;
+  }
+
+  &__button {
+    border: 0;
+    border-radius: 3px;
+    background-color: colors.$pastel-orange;
+
+    &:hover {
+      background-color: colors.$pastel-orange-hover;
+    }
+    &:active {
+      background-color: colors.$white;
+    }
+
+    &--clear {
+      grid-column: span 2;
+    }
+
+    &--span3 {
+      grid-column: span 3;
+    }
+
+    &--operator {
+      background-color: colors.$pastel-beige;
+
+      &:hover {
+        background-color: colors.$pastel-beige-hover;
+      }
+      &:active {
+        background-color: colors.$white;
+      }
+    }
+  }
+}
