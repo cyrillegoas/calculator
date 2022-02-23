@@ -18,6 +18,7 @@
     justify-content: flex-end;
     align-items: center;
     color: colors.$white;
+    overflow: hidden;
   }
 
   &__button {
@@ -40,7 +41,8 @@
       grid-column: span 3;
     }
 
-    &--operator {
+    &--operator,
+    &--result {
       background-color: colors.$pastel-beige;
 
       &:hover {
